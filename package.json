@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/AngeLechuga/Music_Fest#readme",
   "devDependencies": {
+    "gulp": "^5.0.0",
     "sass": "^1.89.0"
   }
 }
