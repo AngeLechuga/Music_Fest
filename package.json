@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Aprendiendo Node, NPM y SASS",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "sass": "sass src/scss:build/css"
+    "sass": "sass -- watch src/scss:build/css",
+    "hola": "gulp hola"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,6 @@
   },
   "homepage": "https://github.com/AngeLechuga/Music_Fest#readme",
   "devDependencies": {
-    "gulp": "^5.0.0",
-    "sass": "^1.89.0"
+    "gulp": "^5.0.0"
   }
 }
