@@ -1,0 +1,24 @@
+{
+  "name": "music_fest",
+  "version": "1.0.0",
+  "description": "Aprendiendo Node, NPM y SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngeLechuga/Music_Fest.git"
+  },
+  "keywords": [
+    "Node",
+    "npm",
+    "SASS"
+  ],
+  "author": "Angel Lechuga Milpas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngeLechuga/Music_Fest/issues"
+  },
+  "homepage": "https://github.com/AngeLechuga/Music_Fest#readme"
+}
