@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/AngeLechuga/Music_Fest/issues"
   },
-  "homepage": "https://github.com/AngeLechuga/Music_Fest#readme"
+  "homepage": "https://github.com/AngeLechuga/Music_Fest#readme",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
 }
