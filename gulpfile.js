@@ -1,5 +1,5 @@
 // -- extraer sass desde el gulp
-import { src, dest } from 'gulp'
+import { src, dest, watch } from 'gulp'
 import * as dartSass from 'sass'
 import gulpSass from 'gulp-sass'
 
@@ -14,6 +14,11 @@ export function css(done) {
         .pipe(dest('build/css'))
     
     done();
+}
+
+// -- ´watch mode en gulp´
+export function dev() {
+    watch('src/scss/app.scss', css);
 }
 /* export function hola( done ) {
     console.log('Hola desde gulpfile.js');
