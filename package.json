@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "sass": "sass -- watch src/scss:build/css",
-    "hola": "gulp hola"
+    "css": "gulp css"
   },
   "repository": {
     "type": "git",
