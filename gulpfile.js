@@ -18,7 +18,7 @@ export function css(done) {
 
 // -- ´watch mode en gulp´
 export function dev() {
-    watch('src/scss/app.scss', css);
+    watch('src/scss/**/*.scss', css);
 }
 /* export function hola( done ) {
     console.log('Hola desde gulpfile.js');
