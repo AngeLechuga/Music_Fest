@@ -1,12 +1,6 @@
-/* ======================================
-                VARIABLES
-========================================*/
-
-/* FUENTE PRINCIPAL */
-$main_font : "Raleway", sans-serif;
-
+@use 'variables' as v;
 body {
-    font-family: $main_font;
+    font-family: v.$main_font;
     font-optical-sizing: auto;
     font-style: normal;
 }
