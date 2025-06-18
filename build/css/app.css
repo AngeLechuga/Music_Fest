@@ -313,6 +313,9 @@ template {
 /* FUENTE PRINCIPAL */
 /* COLORES */
 /* MEDIA QUERIES */
+/* ======================================
+                MIXINS
+========================================*/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -377,9 +380,6 @@ body > section {
   padding: 10rem 0;
 }
 
-/* ======================================
-                MIXINS
-========================================*/
 .header {
   background-color: #00FF88;
   /* MIXINs */
