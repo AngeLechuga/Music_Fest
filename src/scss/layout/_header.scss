@@ -6,13 +6,13 @@
 
     /* MIXINs */
     @include m.telefono {
-        color: white;
+        color: v.$verde;
         width: 10px;
         height: 1px;
     }
 
     @include m.tablet {
-        color: white;
+        color: v.$verde;
         width: 10px;
         height: 1px;
     }
@@ -31,20 +31,34 @@
 
     .contenido-header {
         padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include m.tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
     }
 
     h1 {
         color: v.$negro;
-        margin: 0;
+        text-align: center;
+        @include m.tablet {
+            text-align: left;
+            margin: 0;
+        }
     }
 }
 
 .navegacion-principal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
+
+    @include m.tablet {
+        flex-direction: row;
+    }
+
     a {
         color: v.$negro;
         font-size: 2.4rem;
