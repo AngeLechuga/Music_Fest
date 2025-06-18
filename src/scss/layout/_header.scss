@@ -1,0 +1,37 @@
+@use 'base/variables' as v; //importando vel archivo variables desde la carpeta base
+
+.header {
+    background-color: v.$verde;
+
+    .contenido-header {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        color: v.$negro;
+        margin: 0;
+    }
+}
+
+.navegacion-principal {
+    display: flex;
+    gap: 2rem;
+    a {
+        color: v.$negro;
+        font-size: 2.4rem;
+
+        &:hover {
+            color: v.$blanco;
+        }
+    }
+}
+
+@mixin contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
