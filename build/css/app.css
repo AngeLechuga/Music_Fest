@@ -312,6 +312,7 @@ template {
 ========================================*/
 /* FUENTE PRINCIPAL */
 /* COLORES */
+/* MEDIA QUERIES */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -376,8 +377,40 @@ body > section {
   padding: 10rem 0;
 }
 
+/* ======================================
+                MIXINS
+========================================*/
 .header {
   background-color: #00FF88;
+  /* MIXINs */
+}
+@media (min-width: 480px) {
+  .header {
+    color: white;
+    width: 10px;
+    height: 1px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    color: white;
+    width: 10px;
+    height: 1px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    color: white;
+    width: 10px;
+    height: 1px;
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    color: white;
+    width: 10px;
+    height: 1px;
+  }
 }
 .header .contenido-header {
   padding: 2rem;
