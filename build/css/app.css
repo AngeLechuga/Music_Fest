@@ -313,9 +313,6 @@ template {
 /* FUENTE PRINCIPAL */
 /* COLORES */
 /* MEDIA QUERIES */
-/* ======================================
-                MIXINS
-========================================*/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -382,34 +379,30 @@ body > section {
 
 .header {
   background-color: #00FF88;
-  /* MIXINs */
 }
 @media (min-width: 480px) {
   .header {
-    color: #00FF88;
-    width: 10px;
-    height: 1px;
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 768px) {
   .header {
-    color: #00FF88;
-    width: 10px;
-    height: 1px;
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 1200px) {
   .header {
-    color: white;
-    width: 10px;
-    height: 1px;
+    width: 100%;
+    height: auto;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .header {
-    color: white;
-    width: 10px;
-    height: 1px;
+    color: wheat;
+    width: 100%;
+    height: auto;
   }
 }
 .header .contenido-header {
@@ -452,32 +445,34 @@ body > section {
   color: #FFFFFF;
 }
 
+/* @mixin contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header-contenedor {
+    @include contenedor();
+}
+
+.nav-contenedor {
+    @include contenedor();
+} */
 .video {
   position: relative;
-  min-height: 50rem;
-  max-height: 70rem;
-  overflow: hidden;
 }
 .video .overlay {
   position: absolute;
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
-  inset: 0;
   display: flex;
   align-items: center;
+  background: linear-gradient(270deg, rgba(255, 107, 0, 0.2), rgba(255, 107, 0, 0.5));
+  inset: 0;
 }
 .video video {
-  background-color: none;
   display: block;
-}
-@media (min-width: 1200px) {
-  .video video {
-    width: 100%;
-  }
+  width: auto;
 }
 
-.contenido-video {
-  z-index: 10;
-}
 .contenido-video h2 {
   color: #FFFFFF;
   font-size: 7rem;
@@ -485,11 +480,10 @@ body > section {
 }
 .contenido-video p {
   color: #FFFFFF;
+  font-size: 2.4rem;
+  font-weight: 700;
   background-color: #FF007A;
   display: inline-block;
   padding: 1rem 2rem;
-  margin-top: 2rem;
-  font-size: 2.4rem;
-  font-weight: 700;
   margin: 0;
 }

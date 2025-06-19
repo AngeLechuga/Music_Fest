@@ -1,55 +1,52 @@
-@use 'base/variables' as v; //importando vel archivo variables desde la carpeta base
-@use 'base/mixins' as m;
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 
+// ESTILO DE HEADER
 .header {
     background-color: v.$verde;
 
-    /* MIXINs */
     @include m.telefono {
-        color: v.$verde;
-        width: 10px;
-        height: 1px;
+        width: 100%;
+        height: auto;
     }
-
     @include m.tablet {
-        color: v.$verde;
-        width: 10px;
-        height: 1px;
+        width: 100%;
+        height: auto;
     }
-
     @include m.desktop {
-        color: white;
-        width: 10px;
-        height: 1px;
+        width: 100%;
+        height: auto;
     }
-
     @include m.desktopXL {
-        color: white;
-        width: 10px;
-        height: 1px;
+        color: wheat;
+        width: 100%;
+        height: auto;
     }
 
-    .contenido-header {
+    .contenido-header{
         padding: 2rem;
+
         @include m.tablet {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        
     }
 
     h1 {
         color: v.$negro;
         text-align: center;
-        @include m.tablet {
+        @include m.tablet{
             text-align: left;
             margin: 0;
         }
+        
     }
 }
 
+// ESTILO DE NAVEGACIÓN
 .navegacion-principal {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,16 +59,23 @@
     a {
         color: v.$negro;
         font-size: 2.4rem;
-
         &:hover {
             color: v.$blanco;
         }
     }
 }
 
-@mixin contenedor {
+//Mixin de contenedor
+/* @mixin contenedor {
     width: 95%;
     max-width: 120rem;
     margin: 0 auto;
 }
 
+.header-contenedor {
+    @include contenedor();
+}
+
+.nav-contenedor {
+    @include contenedor();
+} */
