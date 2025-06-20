@@ -20,8 +20,3 @@ export function css(done) {
 export function dev() {
     watch('src/scss/**/*.scss', css);
 }
-/* export function hola( done ) {
-    console.log('Hola desde gulpfile.js');
-
-    done();
-}; */
