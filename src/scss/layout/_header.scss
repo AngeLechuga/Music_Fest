@@ -1,32 +1,11 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-// ESTILO DE HEADER
 .header {
     background-color: v.$verde;
-
-    @include m.telefono {
-        width: 100%;
-        height: auto;
-    }
-    @include m.tablet {
-        width: 100%;
-        height: auto;
-    }
-    @include m.desktop {
-        width: 100%;
-        height: auto;
-    }
-    @include m.desktopXL {
-        color: wheat;
-        width: 100%;
-        height: auto;
-    }
-
-    .contenido-header{
+    .contenido-header {
         padding: 2rem;
-
-        @include m.tablet {
+        @include m.tablet{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -34,48 +13,11 @@
     }
 
     h1 {
-        color: v.$negro;
+        color: v.$blanco;
         text-align: center;
-        @include m.tablet{
+        @include m.tablet {
             text-align: left;
-            margin: 0;
-        }
-        
-    }
-}
-
-// ESTILO DE NAVEGACIÓN
-.navegacion-principal {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-
-    @include m.tablet {
-        flex-direction: row;
-    }
-
-    a {
-        color: v.$negro;
-        font-size: 2.4rem;
-        &:hover {
-            color: v.$blanco;
+            margin:0;
         }
     }
 }
-
-//Mixin de contenedor
-/* @mixin contenedor {
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
-.header-contenedor {
-    @include contenedor();
-}
-
-.nav-contenedor {
-    @include contenedor();
-} */
